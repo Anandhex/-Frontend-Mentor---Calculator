@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assests/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">calc</div>
+      <div class="theme-picker">
+        <div>THEME</div>
+        <div class="slider">
+          <div class="slider-val">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <input
+            onchange="handleChangeEvent(event)"
+            type="range"
+            min="1"
+            max="3"
+            step="1"
+          />
+        </div>
+      </div>
+    </header>
+    <section id="input"></section>
+    <section class="calc">
+      <div class="btn">7</div>
+      <div class="btn">8</div>
+      <div class="btn">9</div>
+      <div class="btn alternate">del</div>
+      <div class="btn">4</div>
+      <div class="btn">5</div>
+      <div class="btn">6</div>
+      <div class="btn">+</div>
+      <div class="btn">1</div>
+      <div class="btn">2</div>
+      <div class="btn">3</div>
+      <div class="btn">-</div>
+      <div class="btn">.</div>
+      <div class="btn">0</div>
+      <div class="btn">/</div>
+      <div class="btn">X</div>
+      <div class="btn alternate big">reset</div>
+      <div class="btn big cal">=</div>
+    </section>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Anand R Patil</a>.
+    </div> -->
+    <script src="./assests/js/index.js"></script>
+  </body>
+</html>

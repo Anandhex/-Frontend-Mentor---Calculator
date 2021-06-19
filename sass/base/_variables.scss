@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+$font-spartan: "Spartan", "sans-serif";
+
+//theme 1
+
+$th1-bg-main: hsl(222, 26%, 31%);
+$th1-bg-keypad: hsl(223, 31%, 20%);
+$th1-bg-screen: hsl(224, 36%, 15%);
+
+$th1-key-bg: hsl(225, 21%, 49%);
+$th1-key-shadow: hsl(224, 28%, 35%);
+
+$th1-key-toggle: hsl(6, 63%, 50%);
+$th1-key-toggle-shadow: hsl(6, 70%, 34%);
+
+$th1-key-equal: hsl(30, 25%, 89%);
+$th1-key-equal-shadow: hsl(28, 16%, 65%);
+
+$th1-text: hsl(221, 14%, 31%);
+$th1-white: hsl(0, 0, 100%);
+
+//theme 2
+$th2-bg-main: hsl(0, 0%, 90%);
+$th2-bg-keypad: hsl(0, 5%, 81%);
+$th2-bg-screen: hsl(0, 0%, 93%);
+
+$th2-key-bg: hsl(185, 42%, 37%);
+$th2-key-shadow: hsl(185, 58%, 25%);
+
+$th2-key-toggle: hsl(25, 98%, 40%);
+$th2-key-toggle-shadow: hsl(25, 99%, 27%);
+
+$th2-key-equal: hsl(45, 7%, 89%);
+$th2-key-equal-shadow: hsl(35, 11%, 61%);
+
+$th2-text: hsl(60, 10%, 19%);
+$th2-white: hsl(0, 0, 100%);
+
+//theme 3
+$th3-bg-main: hsl(268, 75%, 9%);
+$th3-bg-keypad: hsl(268, 71%, 12%);
+$th3-bg-screen: hsl(268, 71%, 12%);
+
+$th3-key-bg: hsl(281, 89%, 26%);
+$th3-key-shadow: hsl(285, 91%, 52%);
+
+$th3-key-toggle: hsl(176, 100%, 44%);
+$th3-key-toggle-shadow: hsl(177, 92%, 70%);
+
+$th3-key-equal: hsl(268, 47%, 21%);
+$th3-key-equal-shadow: hsl(290, 70%, 36%);
+
+$th3-text: hsl(52, 100%, 62%);
+$th3-white: hsl(0, 0, 100%);
+$th3-dark: hsl(198, 20%, 13%);

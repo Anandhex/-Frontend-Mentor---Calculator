@@ -293,4 +293,40 @@ input[type="range"]::-moz-range-track {
 .theme3 header {
   color: #ffe53d;
 }
+
+@media (min-width: 631px) and (max-width: 960px) {
+  main {
+    width: 33vw;
+  }
+  #input {
+    width: 33vw;
+  }
+  header {
+    width: 33vw;
+  }
+  header .theme-picker {
+    width: 15vw;
+  }
+  header .theme-picker .slider {
+    width: 10vw;
+  }
+}
+
+@media (min-width: 961px) {
+  main {
+    width: 33vw;
+  }
+  #input {
+    width: 33vw;
+  }
+  header {
+    width: 33vw;
+  }
+  header .theme-picker {
+    width: 15vw;
+  }
+  header .theme-picker .slider {
+    width: 10vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */

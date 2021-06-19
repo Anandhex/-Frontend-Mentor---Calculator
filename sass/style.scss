@@ -268,3 +268,38 @@ input[type="range"]::-moz-range-track {
     color: $th3-text;
   }
 }
+
+@include tab {
+  main {
+    width: 33vw;
+  }
+  #input {
+    width: 33vw;
+  }
+  header {
+    width: 33vw;
+    .theme-picker {
+      width: 15vw;
+      .slider {
+        width: 10vw;
+      }
+    }
+  }
+}
+@include desktop {
+  main {
+    width: 33vw;
+  }
+  #input {
+    width: 33vw;
+  }
+  header {
+    width: 33vw;
+    .theme-picker {
+      width: 15vw;
+      .slider {
+        width: 10vw;
+      }
+    }
+  }
+}

@@ -19,18 +19,21 @@ body {
   user-select: none;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
 header {
-  width: 90vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 40% 60%;
   margin-bottom: 1rem;
+  gap: 5rem;
 }
 
 header .theme-picker {
   display: flex;
   align-items: flex-end;
-  width: 32vw;
 }
 
 header .theme-picker > div {
@@ -38,15 +41,14 @@ header .theme-picker > div {
 }
 
 header .theme-picker .slider {
+  width: 30%;
   display: flex;
   flex-direction: column;
-  width: 20vw;
   margin-left: 1rem;
 }
 
 #input {
   height: 10vh;
-  width: 90vw;
   background-color: #232c43;
   border-radius: 20px;
   margin-bottom: 1rem;
@@ -101,14 +103,9 @@ header .theme-picker .slider {
   box-shadow: 0px 5px #93261a;
 }
 
-input[type="range"] {
-  width: 16vw;
-}
-
 .slider-val {
   display: flex;
   justify-content: space-between;
-  width: 14vw;
   padding-bottom: 0.7rem;
   margin-left: 0.2rem;
 }
@@ -296,37 +293,13 @@ input[type="range"]::-moz-range-track {
 
 @media (min-width: 631px) and (max-width: 960px) {
   main {
-    width: 33vw;
-  }
-  #input {
-    width: 33vw;
-  }
-  header {
-    width: 33vw;
-  }
-  header .theme-picker {
-    width: 15vw;
-  }
-  header .theme-picker .slider {
-    width: 10vw;
+    width: 100%;
   }
 }
 
 @media (min-width: 961px) {
   main {
-    width: 33vw;
-  }
-  #input {
-    width: 33vw;
-  }
-  header {
-    width: 33vw;
-  }
-  header .theme-picker {
-    width: 15vw;
-  }
-  header .theme-picker .slider {
-    width: 10vw;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

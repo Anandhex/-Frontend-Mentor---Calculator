@@ -1,7 +1,19 @@
 const btns = document.querySelectorAll(".btn");
 const input = document.getElementById("input");
 
-document.getElementById("range").value = 1;
+document.getElementById("range").value = "1";
+
+if (window.matchMedia("(prefers-color-scheme: dark)").media === "not all") {
+  document.getElementById("range").value = "2";
+  document.body.classList.remove("theme3");
+  document.body.classList.add("theme2");
+} else {
+  if (window.matchMedia("(prefers-color-scheme:dark)").matches === false) {
+    document.getElementById("range").value = "2";
+    document.body.classList.remove("theme3");
+    document.body.classList.add("theme2");
+  }
+}
 
 let values = [];
 

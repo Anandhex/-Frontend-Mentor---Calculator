@@ -284,3 +284,9 @@ input[type="range"]::-moz-range-track {
 .multi {
   text-transform: lowercase !important;
 }
+
+@include mobile {
+  body {
+    height: 80vh;
+  }
+}

@@ -19,10 +19,10 @@ main {
 
 header {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
   margin-bottom: 1rem;
-  overflow-x: hidden;
   padding-bottom: 1rem;
+  overflow-x: hidden;
   gap: 5rem;
   .theme-picker {
     display: flex;
@@ -78,6 +78,11 @@ header {
   cursor: pointer;
   z-index: 2;
   box-shadow: 0 5px $th1-key-equal-shadow;
+  @include mobile {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
 .alternate {
@@ -85,6 +90,9 @@ header {
   color: $th1-white;
   background-color: $th1-key-bg;
   box-shadow: 0 5px $th1-key-shadow;
+  @include mobile {
+    font-size: 1rem;
+  }
 }
 
 .big {
@@ -289,6 +297,8 @@ input[type="range"]::-moz-range-track {
 
 @include mobile {
   body {
-    height: 80vh;
+    justify-content: center;
+    align-content: flex-start;
+    margin-top: 3rem;
   }
 }

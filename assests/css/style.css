@@ -26,10 +26,10 @@ main {
 
 header {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
   margin-bottom: 1rem;
-  overflow-x: hidden;
   padding-bottom: 1rem;
+  overflow-x: hidden;
   gap: 5rem;
 }
 
@@ -87,11 +87,25 @@ header .theme-picker .slider {
   box-shadow: 0 5px #b4a597;
 }
 
+@media (max-width: 630px) {
+  .btn {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
 .alternate {
   font-size: 1.5rem;
   color: white;
   background-color: #637097;
   box-shadow: 0 5px #404e72;
+}
+
+@media (max-width: 630px) {
+  .alternate {
+    font-size: 1rem;
+  }
 }
 
 .big {
@@ -312,7 +326,9 @@ input[type="range"]::-moz-range-track {
 
 @media (max-width: 630px) {
   body {
-    height: 80vh;
+    justify-content: center;
+    align-content: flex-start;
+    margin-top: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

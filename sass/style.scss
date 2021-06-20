@@ -21,6 +21,8 @@ header {
   display: grid;
   grid-template-columns: 40% 60%;
   margin-bottom: 1rem;
+  overflow-x: hidden;
+  padding-bottom: 1rem;
   gap: 5rem;
   .theme-picker {
     display: flex;

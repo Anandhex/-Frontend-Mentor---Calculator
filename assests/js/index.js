@@ -1,30 +1,54 @@
 const btns = document.querySelectorAll(".btn");
 const input = document.getElementById("input");
 
-let previousValue = "";
-let lastOperator = "";
+document.getElementById("range").value = 1;
+
+let values = [];
+
+const transformString = () => {};
+
+const performOperation = (val1, val2, op) => {
+  const a = Number(val1.replace(/,/g, ""));
+  const b = Number(val2.replace(/,/g, ""));
+  if (val2) {
+    switch (op) {
+      case "+":
+        return a + b;
+      case "-":
+        return a - b;
+      case "x":
+        return a * b;
+      case "/":
+        return a / b;
+    }
+  } else {
+    return "ERROR";
+  }
+};
 
 const handleInputText = (element) => {
-  console.log(element);
   if (element === "del") {
+    input.innerText = input.innerText.slice(0, -1);
   } else if (element === "reset") {
     input.innerText = "";
+    values = [];
   } else if (element === "=") {
-    input.innerText = "";
+    input.innerText = performOperation(values[0], input.innerText, values[1]);
+    values = [];
   } else if (["x", "-", "+", "/"].includes(element)) {
-    if (!previousValue) {
-      previousValue = input.innerText;
-      lastOperator = element;
-    } else {
-      if (element === "=") {
-        lastOperator = "";
-        previousValue = "";
-      }
+    if (values.length < 2) {
+      values.push(...[input.innerText, element]);
+      input.innerText = "";
+    } else if (values.length >= 2) {
+      input.innerText = performOperation(values[0], input.innerText, values[1]);
+      values = [];
     }
-    input.innerText = "";
   } else {
     input.innerText = `${input.innerText}${element}`;
   }
+  text = input.innerText.split(".");
+  text[0] = text[0].replace(/,/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  input.innerText = text.join(".");
 };
 
 btns.forEach((btn) => {
